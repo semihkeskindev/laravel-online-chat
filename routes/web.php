@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+    // this doesn't do anything other than to
+    // tell you to go to /fire
+    return view('test');
 });
+
+Route::post('/chat', 'ChatController@send');
