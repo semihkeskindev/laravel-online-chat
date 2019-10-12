@@ -1,10 +1,9 @@
-# Welcome to Boş İnsanlar Online Chat 👋
+# Welcome to Boş İnsanlar Online Chat
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 ![Prerequisite](https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/kefranabg/readme-md-generator#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/kefranabg/readme-md-generator/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/0x8b612/Boş İnsanlar Online Chat)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
 [![Twitter: 0x8b612](https://img.shields.io/twitter/follow/0x8b612.svg?style=social)](https://twitter.com/0x8b612)
 
 > chat with other people real time
@@ -26,12 +25,6 @@ npm install
 
 ```sh
 laravel-echo-server-start
-```
-
-## Run tests
-
-```sh
-npm run test
 ```
 
 ## Author
