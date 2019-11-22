@@ -10,6 +10,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+    <link href='{{ asset('toastr.css') }}' rel='stylesheet'>
 </head>
 <body>
 @yield('content')

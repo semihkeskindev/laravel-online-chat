@@ -10,7 +10,7 @@
                                 <h1 class="chat-header-title">Basic Chat</h1>
                             </div>
                             <div class="col-md-3">
-                                <h2 class="chat-header-logout"><a href="/logout">Logout</a></h2>
+                                <h2 class="chat-header-logout"><a @click="logout()" href="javascript:void(0)">Logout</a></h2>
                             </div>
                         </div>
                     </div>
@@ -41,9 +41,22 @@
     });
     export default {
         mounted() {
-            console.log('Component mounted.');
+            //
         },
-        methods: {}
+        methods: {
+            logout() {
+                axios.post('/logout', {
+                    //
+                })
+                    .then((response) => {
+                        toastr.success('Something went wrong! Try again later.')
+                        location.reload();
+                    })
+                    .catch(function (error) {
+                        toastr.warning('Something went wrong! Try again later.')
+                    });
+            }
+        }
     }
 
     Echo.channel('laravel_database_chat-message-event').listen('ChatMessageEvent', (msg) => {
@@ -58,6 +71,7 @@
                 $('input[name=chat-input]').val('');
             })
             .catch(function (error) {
+                toastr.warning('Something went wrong! Try again later.')
             });
     }
 </script>
