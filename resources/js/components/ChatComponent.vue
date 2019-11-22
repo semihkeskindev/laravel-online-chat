@@ -41,6 +41,9 @@
     Echo.channel('laravel_database_chat-message-event').listen('ChatMessageEvent', (msg) => {
         $('.chat-text-box').append("<div class='chat-text-message'><p>" + msg.title + ': ' + msg.message + '</p></div>');
     });
+    Echo.channel('chat-message-event').listen('ChatMessageEvent', (msg) => {
+        $('.chat-text-box').append("<div class='chat-text-message'><p>" + msg.title + ': ' + msg.message + '</p></div>');
+    });
 
     function callEvent(chatMessage) {
         axios.post('/chat', {
