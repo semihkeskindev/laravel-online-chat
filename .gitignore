@@ -13,3 +13,4 @@ yarn-error.log
 laravel-echo-server.json
 .idea
 .DS_Store
+laravel-echo-server.lock
