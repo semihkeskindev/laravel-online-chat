@@ -16,6 +16,6 @@ class ChatController extends Controller
             return new Exception('Mesaj Boş Bırakılamaz');
         }
 
-        event(new \App\Events\ChatMessageEvent('Anonymous',$message));
+        event(new \App\Events\ChatMessageEvent(\Auth::user()->username,$message));
     }
 }

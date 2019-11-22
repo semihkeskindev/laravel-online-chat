@@ -4,7 +4,16 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="chat-section">
-                    <div class="card-header"><h1 class="chat-header-title">Basic Chat</h1></div>
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h1 class="chat-header-title">Basic Chat</h1>
+                            </div>
+                            <div class="col-md-3">
+                                <h1 class="chat-header-title">Logout</h1>
+                            </div>
+                        </div>
+                    </div>
                     <form id="send-chat">
                         <div class="chat-form-class group">
                             <input type="text" name="chat-input" placeholder="Message" autocomplete="off" required>
@@ -26,7 +35,6 @@
         e.preventDefault();
         var chatMessage = $('input[name=chat-input]').val();
         if (chatMessage === '') {
-            console.log('Chat Boş Bırakılamaz.');
             return false;
         }
         callEvent(chatMessage);
@@ -50,7 +58,6 @@
                 $('input[name=chat-input]').val('');
             })
             .catch(function (error) {
-                console.log(error);
             });
     }
 </script>
