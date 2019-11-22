@@ -10,7 +10,7 @@
                                 <h1 class="chat-header-title">Basic Chat</h1>
                             </div>
                             <div class="col-md-3">
-                                <h1 class="chat-header-title">Logout</h1>
+                                <h1 class="chat-header-title"><a href="/logout">Logout</a></h1>
                             </div>
                         </div>
                     </div>
