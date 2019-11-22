@@ -10,7 +10,7 @@
                                 <h1 class="chat-header-title">Basic Chat</h1>
                             </div>
                             <div class="col-md-3">
-                                <h1 class="chat-header-title"><a href="/logout">Logout</a></h1>
+                                <h2 class="chat-header-logout"><a href="/logout">Logout</a></h2>
                             </div>
                         </div>
                     </div>
@@ -273,6 +273,21 @@
         border: 1px solid #C1C1C1;
         border-radius: 10px 10px 10px 10px;
         overflow: hidden;
+    }
+
+    .chat-header-logout {
+        text-align: right;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .chat-header-logout a {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .chat-header-logout a:hover {
+        color: #e0e0e0;
     }
 
 
