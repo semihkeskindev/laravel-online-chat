@@ -49,11 +49,11 @@
                     //
                 })
                     .then((response) => {
-                        toastr.success('Something went wrong! Try again later.');
-                        location.reload();
+                        toastr.success('Logged out! Redirecting...');
+                        window.location.reload()
                     })
                     .catch(function (error) {
-                        toastr.warning('Something went wrong! Try again later.');
+                        toastr.error('Something went wrong! Try again later.');
                     });
             }
         }
