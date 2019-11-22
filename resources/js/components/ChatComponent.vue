@@ -49,11 +49,11 @@
                     //
                 })
                     .then((response) => {
-                        toastr.success('Something went wrong! Try again later.')
+                        toastr.success('Something went wrong! Try again later.');
                         location.reload();
                     })
                     .catch(function (error) {
-                        toastr.warning('Something went wrong! Try again later.')
+                        toastr.warning('Something went wrong! Try again later.');
                     });
             }
         }
