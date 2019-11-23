@@ -47,7 +47,7 @@
                 .then((response) => {
                     jQuery.each( response.latestMessages, function( i, msg ) {
                         var a = new Date(msg.created_at);
-                        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.user[0].username + ': ' + msg.message + '</p><p class="text-message-date">' + a.getTime() + '</p></div>');
+                        return $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.user.username + ': ' + msg.message + '</p><p class="text-message-date">' + a.getTime() + '</p></div>');
                     });
                 })
                 .catch(function (error) {
