@@ -60,7 +60,7 @@
     }
 
     Echo.channel('laravel_database_chat-message-event').listen('ChatMessageEvent', (msg) => {
-        $('.chat-text-box').append("<div class='chat-text-message'><p>" + msg.title + ': ' + msg.message + '</p></div>');
+        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.title + ': ' + msg.message + '</p><p class="text-message-date"></p></div>');
     });
 
     function callEvent(chatMessage) {
@@ -302,6 +302,18 @@
 
     .chat-header-logout a:hover {
         color: #e0e0e0;
+    }
+
+    .chat-text-message p {
+        display: inline-block;
+    }
+
+    .text-message-content {
+        text-align: left;
+    }
+    
+    .text-message-date {
+        text-align: right;
     }
 
 
