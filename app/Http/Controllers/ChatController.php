@@ -28,7 +28,7 @@ class ChatController extends Controller
     }
 
     public function getLatestMessages() {
-        $latestMessages = MessageLog::orderBy('created_at','desc')->limit(10)->get();
+        $latestMessages = MessageLog::with('user')->orderBy('created_at','desc')->limit(10)->get();
         return response()->json(['latestMessages' => $latestMessages],'201');
     }
 }

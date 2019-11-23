@@ -46,7 +46,8 @@
             })
                 .then((response) => {
                     jQuery.each( response.latestMessages, function( i, msg ) {
-                        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.title + ': ' + msg.message + '</p><p class="text-message-date">' + msg.time + '</p></div>');
+                        var a = new Date(msg.created_at);
+                        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.user.username + ': ' + msg.message + '</p><p class="text-message-date">' + a.getTime() + '</p></div>');
                     });
                 })
                 .catch(function (error) {
