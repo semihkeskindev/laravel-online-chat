@@ -113,6 +113,7 @@
         padding: 5px;
         height: 500px;
         background-color: #cfd8dc;
+        overflow: scroll;
     }
 
     .chat-form-class {
@@ -311,7 +312,7 @@
     .text-message-content {
         text-align: left;
     }
-    
+
     .text-message-date {
         text-align: right;
     }
