@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MessageLog extends Model
 {
-    protected $table = 'messages_logs';
+    protected $table = 'messages';
 
     protected $guarded = [];
 
