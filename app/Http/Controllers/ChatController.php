@@ -26,4 +26,9 @@ class ChatController extends Controller
         event(new \App\Events\ChatMessageEvent(\Auth::user()->username,$message));
         return response([],201);
     }
+
+    public function getLatestMessages() {
+        $latestMessages = MessageLog::orderBy('created_at','desc')->limit(10)->get();
+        return response()->json(['latestMessages' => $latestMessages],'201');
+    }
 }

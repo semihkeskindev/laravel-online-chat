@@ -41,7 +41,17 @@
     });
     export default {
         mounted() {
-            //
+            axios.post('/getLatestMessages', {
+                //
+            })
+                .then((response) => {
+                    jQuery.each( response.latestMessages, function( i, msg ) {
+                        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.title + ': ' + msg.message + '</p><p class="text-message-date">' + msg.time + '</p></div>');
+                    });
+                })
+                .catch(function (error) {
+                    toastr.error('Something went wrong! Try again later.');
+                });
         },
         methods: {
             logout() {
