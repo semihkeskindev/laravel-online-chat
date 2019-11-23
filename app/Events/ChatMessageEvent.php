@@ -45,8 +45,9 @@ class ChatMessageEvent implements ShouldBroadcastNow
     public function broadcastWith()
     {
         return [
-            'title' => $this->title ?? 'Anonymous',
+            'title' => $this->title,
             'message' => $this->message,
+            'time' => now()->format('H:i'),
         ];
     }
 }

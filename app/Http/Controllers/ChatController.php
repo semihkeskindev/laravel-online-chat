@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\MessageLog;
 use DateTime;
 use Illuminate\Http\Request;
 use Mockery\Exception;
@@ -17,7 +18,12 @@ class ChatController extends Controller
             return new Exception('Mesaj Boş Bırakılamaz');
         }
 
-        $dt = new DateTime();
-        event(new \App\Events\ChatMessageEvent(\Auth::user()->username,$message, $dt->format('H:i')));
+        MessageLog::create([
+            'user_id' => \Auth::id(),
+            'message' => $message,
+        ]);
+
+        event(new \App\Events\ChatMessageEvent(\Auth::user()->username,$message));
+        return response([],201);
     }
 }

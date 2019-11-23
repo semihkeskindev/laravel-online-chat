@@ -60,7 +60,7 @@
     }
 
     Echo.channel('laravel_database_chat-message-event').listen('ChatMessageEvent', (msg) => {
-        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.title + ': ' + msg.message + '</p><p class="text-message-date"></p></div>');
+        $('.chat-text-box').prepend("<div class='chat-text-message d-flex'><p class='mr-auto text-message-content'>" + msg.title + ': ' + msg.message + '</p><p class="text-message-date">' + msg.time + '</p></div>');
     });
 
     function callEvent(chatMessage) {
