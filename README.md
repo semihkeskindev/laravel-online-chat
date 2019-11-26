@@ -8,7 +8,7 @@
 
 > chat with other people real time
 
-### 🏠 [Homepage](https://github.com/0x8b612/laravel-online-chat-websocket)
+### 🏠 [Homepage](https://github.com/0x8b612/laravel-online-chat-websocket) | [Demo](http://bosinsan.demoneo.tech)
 
 ## Prerequisites
 
