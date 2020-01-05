@@ -8,7 +8,6 @@
 
 > chat with other people real time
 
-### 🏠 [Homepage](https://github.com/0x8b612/laravel-online-chat-websocket) | [Demo](http://bosinsan.demoneo.tech)
 
 ## Prerequisites
 
@@ -72,21 +71,8 @@ Example laravel-echo-server.json
 laravel-echo-server start
 ```
 
-## Author
-
-👤 **Semih Keskin**
-
 * Twitter: [@0x8b612](https://twitter.com/0x8b612)
 * Github: [@0x8b612](https://github.com/0x8b612)
 * Github: [@0x8b612](https://gitlab.com/0x8b612)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-
-## 📝 License
-
-Copyright © 2019 [Semih Keskin](https://github.com/0x8b612).
 
 ***
