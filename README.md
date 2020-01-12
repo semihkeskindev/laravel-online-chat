@@ -26,7 +26,7 @@ DB_USERNAME=username
 DB_PASSWORD=password
 ```
 
-Then run this commands by queue
+Then run this commands:
 ```sh
 composer install
 php artisan key:generate
