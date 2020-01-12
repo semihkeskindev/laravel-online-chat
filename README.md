@@ -58,7 +58,7 @@ laravel-echo-server start
 Enjoy the online chat! ^^
 
 * Twitter: [@0x8b612](https://twitter.com/0x8b612)
-* Github: [@0x8b612](https://github.com/0x8b612)
-* Gitlab: [@0x8b612](https://gitlab.com/0x8b612)
+* Github: [@0x8b612](https://github.com/semihkeskindev)
+* Gitlab: [@0x8b612](https://gitlab.com/semihkeskin)
 
 ***
