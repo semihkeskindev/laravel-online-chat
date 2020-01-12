@@ -31,7 +31,9 @@ Then run this commands:
 composer install
 php artisan key:generate
 php artisan migrate
+npm install -g laravel-echo-server
 npm install
+npm run prod
 ```
 
 ## Usage
