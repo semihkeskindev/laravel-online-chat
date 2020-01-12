@@ -8,6 +8,8 @@
 
 > chat with other people real time
 
+![image](https://i.ibb.co/QN14JmZ/image.png)
+
 
 ## Installation
 
@@ -30,18 +32,24 @@ composer install
 php artisan key:generate
 php artisan migrate
 npm install
-```
-
-```sh
 laravel-echo-server configure
 ```
+
+Then enter as in the screenshot below
+
+![image](https://i.ibb.co/qFDxrxn/Screen-Shot-2020-01-12-at-19-12-28.png)
 
 
 ## Usage
 
+Run the command **_AND KEEP COMMAND RUNNING!!!_**
 ```sh
 laravel-echo-server start
 ```
+
+![image](https://i.ibb.co/DGMTpdy/image.png)
+
+Enjoy the online chat! ^^
 
 * Twitter: [@0x8b612](https://twitter.com/0x8b612)
 * Github: [@0x8b612](https://github.com/0x8b612)
