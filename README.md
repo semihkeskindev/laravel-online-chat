@@ -32,17 +32,21 @@ composer install
 php artisan key:generate
 php artisan migrate
 npm install
+```
+
+## Usage
+
+Run the command:
+```sh
 laravel-echo-server configure
 ```
 
-Then enter as in the screenshot below
+Then enter as in the screenshot below:
 
 ![image](https://i.ibb.co/qFDxrxn/Screen-Shot-2020-01-12-at-19-12-28.png)
 
 
-## Usage
-
-Run the command **_AND KEEP COMMAND RUNNING!!!_**
+Run the command (**_AND KEEP COMMAND RUNNING!!!_**):
 ```sh
 laravel-echo-server start
 ```
