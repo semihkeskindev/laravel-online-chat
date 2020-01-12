@@ -9,14 +9,26 @@
 > chat with other people real time
 
 
-## Prerequisites
-
-- npm >=5.5.0
-- node >=9.3.0
-
-## Install
+## Installation
 
 ```sh
+cp .env.example .env
+```
+
+Set up Database Configuration on .env
+```
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=username
+DB_PASSWORD=password
+```
+
+Then run this commands by queue
+```sh
+composer install
+php artisan key:generate
+php artisan migrate
 npm install
 ```
 
@@ -24,46 +36,6 @@ npm install
 laravel-echo-server configure
 ```
 
-Example laravel-echo-server.json
-```sh
-{
-	"authHost": "http://localhost",
-	"authEndpoint": "/broadcasting/auth",
-	"clients": [
-		{
-			"appId": "5d7428abeb5cb128",
-			"key": "737d187f564e7e221bdd1df131bf8cf3"
-		}
-	],
-	"database": "redis",
-	"databaseConfig": {
-		"redis": {},
-		"sqlite": {
-			"databasePath": "/database/laravel-echo-server.sqlite"
-		}
-	},
-	"devMode": true,
-	"host": null,
-	"port": "6001",
-	"protocol": "http",
-	"socketio": {},
-	"secureOptions": 67108864,
-	"sslCertPath": "",
-	"sslKeyPath": "",
-	"sslCertChainPath": "",
-	"sslPassphrase": "",
-	"subscribers": {
-		"http": true,
-		"redis": true
-	},
-	"apiOriginAllow": {
-		"allowCors": true,
-		"allowOrigin": "http://localhost:80",
-		"allowMethods": "GET, POST",
-		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
-	}
-}
-```
 
 ## Usage
 
