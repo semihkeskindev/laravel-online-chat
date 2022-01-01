@@ -63,14 +63,4 @@ Enjoy the online chat! ^^
 
 ***
 
-<div class="project-card flex items-center justify-between md:py-6 md:px-6 px-2 py-4 mb-2">
-    deneme
-    </div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uPoA1zyLRyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uPoA1zyLRyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-</div>
     
